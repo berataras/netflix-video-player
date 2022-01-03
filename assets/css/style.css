@@ -1,0 +1,91 @@
+@import url("../images/icons/video-player-icons/style.css");
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: black;
+  background-color: #000;
+  font-family: sans-serif;
+}
+
+.video-container {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.video-container .video {
+  width: 100%;
+  height: 100%;
+}
+
+.video-container .controls {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 4vmin;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.9)));
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
+  -webkit-transition: opacity 0.5s linear;
+  transition: opacity 0.5s linear;
+}
+
+.video-container .controls .controls-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.video-container .controls .controls-left .title {
+  color: #fefefe;
+  font-size: 2.5vmin;
+}
+
+.video-container .controls .controls-left .title .title-series {
+  font-weight: bold;
+}
+
+.video-container .controls .controls-left .title .title-episode {
+  color: #a1a1a1;
+}
+
+.video-container .controls button {
+  background: none;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  padding: 0 20px 0 20px;
+  -webkit-transition: 200ms all;
+  transition: 200ms all;
+}
+
+.video-container .controls button:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.video-container .controls button span {
+  color: white;
+  font-weight: 800;
+  font-size: 5vmin;
+}
+/*# sourceMappingURL=style.css.map */
